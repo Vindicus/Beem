@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>YumYum Recipes</title>
+    <!--Materialize CDN CSS & Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google Raleway Font Thin 100-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+     <!--Google Cuprum Font-->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic' rel='stylesheet' type='text/css'>
+    <!--Custom CSS-->
+     <link href="{{ url_for('static', filename='stylesheets/main.css') }}" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+   {% block content %} {% endblock %}
+  </body>
+</html>
