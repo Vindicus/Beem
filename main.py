@@ -41,9 +41,9 @@ def required_login(f):
 
 # A marketing landing page for potential users
 # TODO: directs to homepage, GET request - COMPLETE
-@app.route('/')
-def showHome():
-    return render_template('index.html')
+#@app.route('/')
+#def showHome():
+#    return render_template('index.html')
 
 # User login page
 # TODO: authenticate user login, POST request
