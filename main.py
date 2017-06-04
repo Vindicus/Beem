@@ -1,6 +1,3 @@
-# import flask framework modules
-from flask import Flask, render_template, request, redirect, url_for, flash, make_response
-
 # import sqlalchemy for psql database connection
 from sqlalchemy import create_engine, asc, desc
 from sqlalchemy.orm import sessionmaker, exc
@@ -37,22 +34,6 @@ def required_login(f):
             return redirect(url_for('login', next =request.url))
         return f(*args, **kwargs)
     return login
-
-
-# A marketing landing page for potential users
-# TODO: directs to homepage, GET request - COMPLETE
-#@app.route('/')
-#def showHome():
-#    return render_template('index.html')
-
-# User login page
-# TODO: authenticate user login, POST request
-# TODO: return user to login screen if authentication failed, GET request
-@app.route('/login/', methods =['POST'])
-def login():
-    if request.method == 'POST':
-        return
-    return
 
 
 
